@@ -39,7 +39,7 @@
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: $text-color;
+    background-color: $text-color;
 
     &::before {
       content: '';
@@ -65,10 +65,12 @@
 
       &::before {
         transform: rotate(45deg) translate(5px, 8px);
+        background-color: white;
       }
       &::after {
         transform: rotate(-45deg) translate(3px, -7px);
         width: 28px;
+        background-color: white;
       }
     }
   }
@@ -93,7 +95,7 @@
     justify-content: center;
     height: 100vh;
     overflow-y: hidden;
-    background: white;
+    background-color: white;
     padding-right: 16px;
     transform: translateX(100vw);
 
@@ -101,7 +103,7 @@
       transform: translateY(0);
       @include transition;
       height: 100vh;
-      background-color: white;
+      background-color: black;
     }
 
     li {
