@@ -1,0 +1,124 @@
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+
+  .contact-title {
+    @include section-title;
+    margin-bottom: 40px;
+  }
+
+  .message {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin-bottom: 60px;
+  }
+
+  &-contents {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .location {
+      font-size: 18px;
+      font-weight: 600;
+      color: $link-color;
+    }
+
+    .email {
+      color: $link-color;
+      font-weight: 700;
+      text-decoration: underline;
+      font-size: 18px;
+
+      &:hover {
+        color: $point-color;
+      }
+    }
+
+    .sns-container {
+      display: flex;
+
+      li {
+        margin-right: 20px;
+        font-size: 30px;
+
+        i {
+          color: $link-color;
+
+          &:hover {
+            color: $point-color;
+          }
+        }
+      }
+    }
+
+    &__left {
+      width: 300px;
+      padding-top: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      flex: 1;
+    }
+
+    .input {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      padding-top: 18px;
+      & + .input {
+        margin-top: 24px;
+      }
+    }
+
+    .input-label {
+      color: gray;
+      position: absolute;
+      top: 20px;
+      transition: 0.25s ease;
+    }
+
+    .input-field {
+      &::placeholder {
+        font-size: 16px;
+      }
+      border: 0;
+      z-index: 1;
+      background-color: transparent;
+      border-bottom: 2px solid $text-color;
+      font: inherit;
+      font-size: 18px;
+      padding: 4px 0;
+      &:focus,
+      &:valid {
+        outline: 0;
+        border-bottom-color: $point-color;
+        & + .input-label {
+          color: $point-color;
+          transform: translateY(-24px);
+        }
+      }
+    }
+    .action {
+      button {
+        margin-top: 20px;
+        padding: 12px 40px;
+        border: 2px solid $link-color;
+        position: relative;
+        font-weight: 600;
+        font-size: 18px;
+        color: $link-color;
+        background-color: white;
+
+        &:hover {
+          color: white;
+          background-color: $link-color;
+        }
+      }
+    }
+  }
+}

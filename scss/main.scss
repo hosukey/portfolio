@@ -1,0 +1,47 @@
+// colors
+$text-color: #2d3240;
+// $link-color: #14c3ff;
+$link-color: #006af5;
+$point-color: #00aeff;
+$project-color1: #a31915;
+$project-color2: #491080;
+$project-color3: #1659a0;
+$project-color4: #bf223c;
+
+$lightgray-color: rgb(179, 179, 179);
+$background-color: #efefef;
+
+@import 'config';
+@import 'header';
+@import 'intro';
+@import 'nav';
+@import 'projects';
+@import 'skills';
+@import 'contact';
+@import 'footer';
+@import 'responsive';
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+* {
+  color: $text-color;
+  font-family: 'Syne', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.hide {
+  display: none;
+}
