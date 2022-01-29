@@ -83,6 +83,7 @@
   visibility: hidden;
   &.open {
     visibility: visible;
+    margin-top: 0px;
   }
 
   .nav-container {
