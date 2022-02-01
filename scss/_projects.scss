@@ -40,7 +40,7 @@
 
       .project1-default {
         &::after {
-          background: url('./../img/const@300x.png');
+          background: url('./../img/todolist.png');
         }
       }
 
@@ -61,6 +61,7 @@
           background: url('./../img/tracker@3x-100.jpg');
         }
       }
+
       .project1-overlay {
         background-color: $project-color1;
       }
