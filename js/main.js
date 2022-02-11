@@ -86,3 +86,21 @@ AOS.init({
   mirror: false,
   anchorPlacement: 'top-bottom',
 });
+
+// Menu Scroll
+// sections
+const projectsSection = document.querySelector('.projects');
+const skillsSection = document.querySelector('.skills');
+const contactSection = document.querySelector('.contact');
+
+// menu
+const projectBtn = document.querySelector('.nav-projects');
+const contactBtn = document.querySelector('.nav-contact');
+
+projectBtn.addEventListener('click', () => {
+  projectsSection.scrollIntoView();
+});
+
+contactBtn.addEventListener('click', () => {
+  contactSection.scrollIntoView();
+});
