@@ -59,6 +59,12 @@ function toggleMenu() {
   }
 }
 
+// function closeMenuAfterClick(){
+//   if(!showMenu){
+
+//   }
+// }
+
 window.addEventListener('resize', function () {
   if (nav.classList.contains('open')) {
     hamburgerMenuClose();
@@ -92,15 +98,38 @@ AOS.init({
 const projectsSection = document.querySelector('.projects');
 const skillsSection = document.querySelector('.skills');
 const contactSection = document.querySelector('.contact');
+const aboutSection = document.querySelector('.aboutme-intro');
 
 // menu
 const projectBtn = document.querySelector('.nav-projects');
 const contactBtn = document.querySelector('.nav-contact');
+const aboutBtn = document.querySelector('.nav-about');
+
+aboutBtn.addEventListener('click', () => {
+  if (showMenu) {
+    aboutSection.scrollIntoView();
+    hamburgerMenuClose();
+  } else {
+    aboutSection.scrollIntoView();
+  }
+});
 
 projectBtn.addEventListener('click', () => {
-  projectsSection.scrollIntoView();
+  if (showMenu) {
+    projectsSection.scrollIntoView();
+    hamburgerMenuClose();
+  } else {
+    projectsSection.scrollIntoView();
+  }
 });
 
 contactBtn.addEventListener('click', () => {
-  contactSection.scrollIntoView();
+  if (showMenu) {
+    contactSection.scrollIntoView();
+    hamburgerMenuClose();
+  } else {
+    contactSection.scrollIntoView();
+  }
 });
+
+// Menu
