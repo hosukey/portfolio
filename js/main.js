@@ -126,4 +126,14 @@ contactBtn.addEventListener('click', () => {
   }
 });
 
-// Menu
+// Toggle more about me button
+const moreAboutMeBtn = document.querySelector('.introduction');
+const moreAboutMeContents = document.querySelector('.moreaboutme');
+
+moreAboutMeBtn.addEventListener('click', function () {
+  let arrowIcons = document.querySelectorAll('.introduction i');
+  arrowIcons.forEach((icon) => {
+    icon.classList.toggle('hide');
+  });
+  moreAboutMeContents.classList.toggle('hide');
+});
