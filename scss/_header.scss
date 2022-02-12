@@ -21,11 +21,23 @@ header {
     font-weight: 600;
     color: $link-color;
     margin-right: 10px;
+    font-size: 0.8rem;
+    padding: 1rem;
     @include transition;
-
     i {
       @include transition;
       color: $link-color;
+      margin-left: 0.4rem;
+    }
+  }
+
+  .intro-buttons li button {
+    &:hover {
+      background-color: $link-color;
+      color: white;
+      i {
+        color: white;
+      }
     }
   }
 
@@ -50,7 +62,7 @@ header {
   .aboutme-intro {
     position: absolute;
     bottom: 0;
-    padding-bottom: 150px;
+    padding-bottom: 3.4rem;
 
     .highlight-container,
     .highlight {
@@ -90,5 +102,9 @@ header {
         color: $link-color;
       }
     }
+  }
+
+  .intro-buttons {
+    display: flex;
   }
 }
