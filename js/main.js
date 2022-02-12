@@ -59,12 +59,6 @@ function toggleMenu() {
   }
 }
 
-// function closeMenuAfterClick(){
-//   if(!showMenu){
-
-//   }
-// }
-
 window.addEventListener('resize', function () {
   if (nav.classList.contains('open')) {
     hamburgerMenuClose();
@@ -131,5 +125,3 @@ contactBtn.addEventListener('click', () => {
     contactSection.scrollIntoView();
   }
 });
-
-// Menu
